@@ -1,21 +1,21 @@
 {
-    "name"        : "ghost",
-    "version"     : "0.4.2-rc1",
-    "description" : "Just a blogging platform.",
-    "author"      : "Ghost Foundation",
-    "homepage"    : "http://ghost.org",
-    "keywords"    : [
+    "name": "ghost",
+    "version": "0.4.2-rc1",
+    "description": "Just a blogging platform.",
+    "author": "Ghost Foundation",
+    "homepage": "http://ghost.org",
+    "keywords": [
         "ghost",
         "blog",
         "cms"
     ],
-    "repository"  : {
+    "repository": {
         "type": "git",
         "url": "git://github.com/TryGhost/Ghost.git"
     },
-    "bugs"        : "https://github.com/TryGhost/Ghost/issues",
+    "bugs": "https://github.com/TryGhost/Ghost/issues",
     "contributors": "https://github.com/TryGhost/Ghost/graphs/contributors",
-    "licenses"    : [
+    "licenses": [
         {
             "type": "MIT",
             "url": "https://raw.github.com/TryGhost/Ghost/master/LICENSE"
@@ -84,6 +84,7 @@
         "require-dir": "~0.1.0",
         "should": "~2.1.1",
         "sinon": "~1.7.3",
-        "supertest": "~0.8.2"
+        "supertest": "~0.8.2",
+        "steamshovel": "0.0.8"
     }
 }

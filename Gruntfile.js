@@ -316,8 +316,9 @@ var path           = require('path'),
                 coverage: {
                     command: function () {
                         // will work on windows only if mocha is globally installed
-                        var cmd = !!process.platform.match(/^win/) ? 'mocha' : './node_modules/mocha/bin/mocha';
-                        return cmd + ' --timeout 15000 --reporter html-cov > coverage.html ./core/test/blanket_coverage.js';
+                        var cmd = "AUTO_INSTRUMENT=true OUTPUT_PATH=./coverage.html ";
+                            cmd += !!process.platform.match(/^win/) ? 'mocha' : './node_modules/mocha/bin/mocha';
+                        return cmd + ' -t 20000 -R $(pwd)/node_modules/steamshovel/lib/reporter.js ./core/test/coverage.js';
                     },
                     execOptions: {
                         env: 'NODE_ENV=' + process.env.NODE_ENV
